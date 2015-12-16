@@ -1,0 +1,1 @@
+This program has a few dependencies - the names python program found here (http://treyhunner.com/2013/02/random-name-generator/), and a random dictionary word selector found here (https://pypi.python.org/pypi/RandomWords/0.1.5). type "help" to get minimal assistance.
