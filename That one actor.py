@@ -1,3 +1,4 @@
+'''Name Based Generator'''
 import names
 Bnames = ""
 Cnames = ""
@@ -17,10 +18,12 @@ def Cfunc():
         if name[0] == "C":
             Cnames = name
 
-def NameBasedOneActor():
+def NameActor():
     Bfunc()
     Cfunc()
     print Bnames, Cnames
+
+'''Random gobbledygook word based generator'''
 
 import random
 import string
@@ -66,5 +69,19 @@ def word_part(type):
 
 
 
-def ThatOneActor():
+def GibberishActor():
     print gen_first(2,4), gen_second(2,4)
+
+'''Random word based generator'''
+
+from random_words import RandomWords
+rw = RandomWords()
+def DictActor():
+    firstname = str(rw.random_word('b')).title()
+    lastname = str(rw.random_word('c')).title()
+    print firstname, lastname
+
+'''Help'''
+
+help = "To make a name based on real names, type 'NameActor()'. To make a name composed of gibberish words, type 'GibberishActor()'. To make a name from random words, type 'DictActor()'."
+
